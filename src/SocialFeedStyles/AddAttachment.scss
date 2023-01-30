@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.file-parent{
+    display: $display-property;
+    flex-direction: column;
+}
+
+.file-preview{
+    display: flex;
+}
+
+.preview-img{
+    width: 150px;
+}
+
+.close-file{
+    margin-left: 10px;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+
+
+@media only screen and (max-width: $xl){
+    .file-type{
+        font-size:13px ;
+    }
+}
+
+
+@media only screen and (max-width: $sm){
+    .file-type{
+        font-size:12px ;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .file-type{
+        font-size:10px ;
+    }
+}

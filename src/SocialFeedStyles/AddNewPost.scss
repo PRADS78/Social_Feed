@@ -1,0 +1,132 @@
+@import "./variables.scss";
+
+
+.post-parent {
+  box-sizing: border-box;
+  background:$white-background;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: $box-shadow;
+
+  .profile-container {
+    display: $display-property;
+    justify-content: $space-between;
+    padding-bottom: 10px;
+  }
+
+  .user-info {
+    display: $display-property;
+    &:hover{
+      cursor: $cursor-pointer;
+    }
+  }
+
+  .user-data {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+    
+  }
+
+  .user-profession {
+    color: $text-color-gray;
+  }
+
+  .post-duration {
+    color: $text-color-gray;
+    font-size: 14px;
+  }
+
+  .new-post-img {
+    width: 60px;
+    height: 60px;
+    border-radius:50px;
+  }
+
+  .post-options{
+    position: relative;
+  }
+  .post-ellipsis-icon {
+    width: 15px;
+    &:hover {
+      cursor: $cursor-pointer;
+      color:$hover-color ;
+    }
+  }
+
+  .delete-box{
+    display: $display-property;
+    box-shadow: $box-shadow;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 25px;
+    
+    position: absolute;
+    right: 6px;
+  
+  }
+
+  .post-option-buttons {
+    width:70px;
+    height: 28px;
+    background:$white-background;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    
+    &:hover {
+      cursor: $cursor-pointer;
+      background: $hover-color;
+      color: $white-background;
+    }
+  }
+
+  .user-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-message {
+    margin-right: 80px;
+    width: 90%;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-family:"Tahoma";
+    white-space: pre-wrap;
+  }
+
+  .user-file{
+    width:130px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    
+  }
+}
+
+
+@media only screen and (max-width: $sm) {
+  .post-parent {
+    margin-bottom: 25px;
+    .new-post-img {
+      width: 50px;
+      height: 50px;
+    }
+    .user-data {
+      font-size: 12px;
+    }
+    .post-message {
+      font-size: 12px;
+    }
+
+    .post-duration {
+      font-size: 10px;
+    }
+  }
+  .uploaded-audio{
+    width: 200px;
+    height:35px;
+  }
+}

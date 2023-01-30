@@ -1,0 +1,32 @@
+//variables
+$text-color-gray:#767575;
+$hover-color:#801f56;
+$background-color:#dcdcdc;
+$display-property:flex;
+$space-between:space-between;
+$box-shadow: 7px 5px 11px #8d8d8d;
+$cursor-pointer:pointer;
+$white-background:#fff;
+
+
+
+// BreakPoints
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+
+
+//mixin
+@mixin attachmentStyle{
+    display: $display-property;
+    &:hover{
+      color:$hover-color;
+    } 
+}
+
+
+@mixin displayFlex{
+    display:$display-property;
+    justify-content: space-between;
+}

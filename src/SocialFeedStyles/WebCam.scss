@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.webcam-preview{
+    @include displayFlex;
+}
+
+.capture-img{
+border-radius: 4px;
+background:$white-background;
+box-shadow: $box-shadow;
+display: $display-property;
+flex-direction: column;
+align-items: center;
+}
+
+.capture-btn{
+    width: 100%;
+}
+
+.webcam-btn{
+    width: 100%;
+    border: none;
+    background:$hover-color;
+    font-size: 12px;
+    color:$white-background;
+    height: 30px;
+    &:hover{
+        cursor:$cursor-pointer;
+        background: #000;     
+    }
+}
+
+.close-webcam{
+    margin-left: 10px;
+    &:hover{
+        cursor:$cursor-pointer;
+    }
+}

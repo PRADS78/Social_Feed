@@ -1,0 +1,53 @@
+
+@import "./variables.scss";
+
+.see-more-parent {
+  box-sizing: border-box;
+  display: $display-property;
+  justify-content: center;
+  flex-direction: column;
+}
+.see-more-button{
+  display: $display-property;
+  justify-content: center;
+  background:$background-color;
+  border: none;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 10px 15px 30px 45px;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:hover {
+    background: $hover-color;
+    color: $white-background;
+    cursor: $cursor-pointer;
+  }
+
+  .see-more-icon {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: $xl) {
+  .see-more-parent {
+    .see-more-button {
+      margin: 10px 14px 30px 30px;
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $sm) {
+  .see-more-parent{
+  .see-more-button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+      margin-left: 25px;
+     
+    }
+  }
+}

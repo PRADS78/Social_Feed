@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.sidebar {
+  position: fixed;
+  top: 75px;
+  width: 23%;
+  height: 100%;
+  background:$white-background;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+  z-index: 2;
+ 
+  .recently-added {
+    padding-left: 35px;
+    padding-bottom: 15px;
+
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .sidebar {
+    transform: translateX(500px);
+    transition: 0.8s;
+    right: 0;
+    width: 280px;
+    padding-bottom: 80px;
+    z-index: 3;
+
+    .recently-added {
+      padding-left: 25px;
+      font-size: 14px;
+    }
+  }
+  .display {
+    transform: translateX(0);
+    transition: 0.8s;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .sidebar {
+    width: 240px;
+    top:66px;
+    .recently-added {
+      font-size: 13px;
+    }
+  }
+
+  
+}
+

@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+
+.user-profile-parent {
+  display: $display-property;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 10px;
+
+  .user-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+  }
+
+  .user-name {
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 30px;
+    cursor: $cursor-pointer;
+    &:hover{
+      color:$hover-color;
+    }
+  }
+}
+
+@media only screen and (max-width: $xl) {
+  .user-profile-parent {
+    padding-left: 22px;
+    padding-bottom: 10px;
+
+    .user-img {
+      width: 45px;
+      height: 45px;
+    }
+
+    .user-name {
+      font-size: 15px;
+      padding-left: 16px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $sm) {
+  .user-profile-parent {
+    padding-left: 15px;
+    padding-bottom: 10px;
+
+    .user-img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .user-name {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "./variables.scss";
+
+.pop-up-overlay {
+  background: #38373780;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  left: 0;
+  z-index: 2;
+  display: $display-property;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-box {
+  padding-bottom: 15px;
+  border-radius: 8px;
+  width: 25%;
+  background: $white-background;
+  height: 22%;
+  z-index: 4;
+  display: $display-property;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0px 5px 10px #4a4a4a;
+}
+
+.confirm-text {
+  padding: 40px 20px;
+}
+
+.btn {
+  border: 1px solid #dcdcdc;
+
+  padding: 8px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: $cursor-pointer;
+  }
+}
+
+.cancel-btn {
+  color: #000;
+  background: $white-background;
+  margin-right: 20px;
+
+  &:hover {
+    background:$hover-color;
+    color: #fff;
+  }
+}
+
+.remove-btn {
+  color: #000;
+  background: $white-background;
+  &:hover {
+    background: $hover-color;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: $lg) {
+  .confirm-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: $sm) {
+  .pop-up-box {
+    width: 50%;
+
+    height: 15%;
+  }
+
+  .confirm-text {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 11px;
+  }
+
+  .btn {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+
+  .cancel-btn {
+    margin-right: 15px;
+  }
+}

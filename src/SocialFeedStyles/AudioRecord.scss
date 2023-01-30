@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.audio-parent{
+    display: $display-property;
+}
+
+.audio-rec{
+   @include displayFlex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audio-tag-style{
+width:200px;
+background-color: transparent;
+border:0;
+}
+
+.btn-controls{
+    display: $display-property;  
+    padding-left: 30px;
+}
+
+.audio-btn{
+    // height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background:$white-background ;
+    box-shadow: $box-shadow;
+    margin-right: 10px;
+    color:#fff ;
+    padding:7px 12px;
+    border-radius: 5px;
+    &:hover{
+        cursor: $cursor-pointer;
+    }
+}
+
+.btn-color1{
+   background: #058c39;
+   
+}
+.btn-color2{
+    background: #c1130d;
+ }
+
+.status{
+    font-size: 12px;
+}
+
+.close-media-rec{
+    margin-left: 10px;
+ &:hover{
+    cursor:$cursor-pointer;
+ }
+}
+
+@media only screen and (max-width: $sm){
+    .audio-tag-style{
+        width:210px;
+        height: 35px;
+    
+        }
+}

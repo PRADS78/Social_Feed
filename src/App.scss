@@ -1,0 +1,13 @@
+@import "./SocialFeedStyles/variables.scss";
+
+*{
+    
+    margin:0;
+    padding:0;
+}
+body{    
+    
+    background: $background-color;
+    box-sizing: border-box;
+    font-family:"Arial";
+}
