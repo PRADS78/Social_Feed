@@ -14,7 +14,8 @@ const SeeMoreButton = ({seeMoreFunc}) => {
     return (
         <div className="see-more-parent">
             <button onClick={handleButton}className="see-more-button">
-                {isOpen ? 'See More' : 'See Less' }<FontAwesomeIcon icon={isOpen?faAngleDown:faAngleUp}  className="see-more-icon"/></button>
+                {isOpen ? 'See More' : 'See Less' }<FontAwesomeIcon icon={isOpen?faAngleDown:faAngleUp}  className="see-more-icon"/>
+            </button>
         </div>
     );
 }

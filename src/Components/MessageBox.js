@@ -54,13 +54,14 @@ const MessageBox = ({ addItemToStorage }) => {
   }
 
   useEffect(() => {
-    
-  if(userMessageAdded.length>0&&userMessageAdded.replace(/\s/g, "")|| userUploadedFile !== ""|| userWebCamImage!==""||userRecAudio!==""){
-              setViewPostButton(false);
-            }
-    else{
-      setViewPostButton(true);
-    }
+  if(userMessageAdded.length>0&&userMessageAdded.replace(/\s/g, "")|| userUploadedFile !== ""|| userWebCamImage!==""||userRecAudio!=="")
+  {
+    setViewPostButton(false);
+  }
+  else
+  {
+    setViewPostButton(true);
+  }
   }, [userMessageAdded,userUploadedFile,userWebCamImage,userRecAudio])
   
 

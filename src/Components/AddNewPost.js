@@ -86,9 +86,9 @@ const AddNewPost = ({
 
       <div className="user-content">
         <pre className="post-message">{userMessage}</pre>
-        {userFile && <img src={userFile} className="user-file" alt="" />}
-        {userImage && <img src={userImage} className="user-file" alt="" />}
-        {userAudio && <audio src={userAudio} controls className="uploaded-audio" />}
+        {userFile && <img src={userFile} className="user-file" alt="upload-file" />}
+        {userImage && <img src={userImage} className="user-file" alt="upload-image" />}
+        {userAudio && <audio src={userAudio} controls className="upload-audio" />}
       </div>
     </div>
   );
